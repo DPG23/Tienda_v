@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <!-- Esta es la primera pagina del curso.... -->
-<html>
+<html lang="es">
     <head>
         <title>TechShop</title>
         <meta charset="UTF-8"/>
-    </head>
+        <meta name="description" content="Página principal del sitio TechShop"/>
+        <meta name="keywords" content="Adidas,puma,nike,html,css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+         
+    </head> 
     <body>
-        <h1 style="text-align: center;background-color: blue;color:white">Home</h1>
-        <p>Primera página</p>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, tortor tellus dignissim sollicitudin fermentum ut vitae laoreet nostra, lectus molestie habitasse auctor convallis duis urna. Quis rhoncus justo scelerisque pellentesque elementum consequat hendrerit sociosqu a convallis, interdum vivamus mi felis cras egestas dignissim ante rutrum vitae, mauris molestie sagittis quisque hac dui fringilla dictum turpis. Eleifend nibh himenaeos dapibus netus auctor diam laoreet, ut arcu risus fames dis praesent ac porttitor, sollicitudin pretium venenatis et vel tristique. Himenaeos ad tortor natoque semper faucibus magna et, aptent habitant elementum quisque dui proin, duis consequat potenti fermentum mattis sem.</p>
+        <header class="header">
+            <h1>Techshop</h1>   
+            <nav>
+                <a href="ejemplo6.html">Back</a>|
+                <a href="index.html">Home</a>|
+                <a href="ejemplo2.html">Next</a>
+            </nav>
+            <hr>
+        </header>
+        <aside class="aside">
+            <h2>Ultimas noticias</h2>
+            <p>Los productos de la empres DELL, sufriran un incremento en un 20% en febrero respecto a los precios del mes de enero
+       <p>Los de HP, se mantienen igual...</p>
+        </aside>
 
-        <p style="text-align: center">Nec cursus nisi rutrum tempor orci nam conubia litora non a phasellus, et laoreet parturient mus volutpat quam condimentum magna hendrerit. Consequat conubia id urna lacinia phasellus metus, suspendisse sollicitudin sed tempor morbi, cubilia fermentum donec suscipit condimentum. A facilisi quis vestibulum posuere integer euismod risus etiam et, porttitor ultricies magna non dui praesent aptent duis, taciti est nisi diam nisl ornare cum mollis.</p>
+        <section class="contenido">
+            <h2 id="titulo">Nuestros Productos</h2>
+            <article>
+                <header>
+                    <h3 class="producto">Alienware 5000</h3>
+                </header>
+                <figure>
+                    <img src="img/alien.png" alt="" width="300"/>
+                    <figcaption>Especial para gamers</figcaption>
+                </figure>
+                <h4>Caracteristicas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque, tortor tellus dignissim sollicitudin fermentum ut vitae laoreet nostra, lectus molestie habitasse auctor convallis duis urna. Quis rhoncus justo scelerisque pellentesque elementum consequat hendrerit sociosqu a convallis, interdum vivamus mi felis cras egestas dignissim ante rutrum vitae, mauris molestie sagittis quisque hac dui fringilla dictum turpis. Eleifend nibh himenaeos dapibus netus auctor diam laoreet, ut arcu risus fames dis praesent ac porttitor, sollicitudin pretium venenatis et vel tristique. Himenaeos ad tortor natoque semper faucibus magna et, aptent habitant elementum quisque dui proin, duis consequat potenti fermentum mattis sem.</p>
+                <footer>$650.00 <a href="#">comprar</a><hr></footer>
+            </article>
 
-        <p style="text-align: right">Pretium duis purus volutpat tempor tempus mus tellus pellentesque tincidunt nulla ante a aliquet, dignissim arcu senectus justo curabitur enim mollis sociis semper phasellus vel. Cum magnis conubia at dignissim rhoncus facilisis sem lectus facilisi sociosqu vestibulum pretium habitant in, euismod nam aptent torquent fames malesuada purus semper libero ac maecenas ridiculus. Vitae semper ut arcu natoque scelerisque hendrerit nunc class accumsan malesuada, non conubia vestibulum feugiat lobortis volutpat vulputate ac erat venenatis, congue risus porta tempus himenaeos odio eu laoreet sed.</p>
+            <article>
+                <header>
+                    <h3 class="producto">Impresora HP 3D</h3>
+                </header>
+                <figure>
+                    <img src="img/Impresora 3D.jpg" alt="300"/>
+                    <figcaption>Multiples colores</figcaption>
+                </figure>
+                <h4>Caracteristicas</h4>
+                <p>Nec cursus nisi rutrum tempor orci nam conubia litora non a phasellus, et laoreet parturient mus volutpat quam condimentum magna hendrerit. Consequat conubia id urna lacinia phasellus metus, suspendisse sollicitudin sed tempor morbi, cubilia fermentum donec suscipit condimentum. A facilisi quis vestibulum posuere integer euismod risus etiam et, porttitor ultricies magna non dui praesent aptent duis, taciti est nisi diam nisl ornare cum mollis.</p>
+
+                <footer>$5550.00 <a href="#">comprar</a><hr></footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3 class="producto">Portatil DELL</h3>
+                </header>
+                <figure>
+                    <img src="img/Portatil.jpg" alt=""/>
+                    <figcaption>Bateria para 8 horas</figcaption>
+                </figure>
+                <h4>Caracteristicas</h4>
+                <p>Pretium duis purus volutpat tempor tempus mus tellus pellentesque tincidunt nulla ante a aliquet, dignissim arcu senectus justo curabitur enim mollis sociis semper phasellus vel. Cum magnis conubia at dignissim rhoncus facilisis sem lectus facilisi sociosqu vestibulum pretium habitant in, euismod nam aptent torquent fames malesuada purus semper libero ac maecenas ridiculus. Vitae semper ut arcu natoque scelerisque hendrerit nunc class accumsan malesuada, non conubia vestibulum feugiat lobortis volutpat vulputate ac erat venenatis, congue risus porta tempus himenaeos odio eu laoreet sed.</p>
+                <footer>$750.00 <a href="#">comprar</a><hr></footer>
+            </article>
+        </section>
+        <footer class="pie">Desarrollos Tecnologicos Coronado 2023 &COPY;</footer>
+
     </body>
 </html>
