@@ -93,10 +93,12 @@ body{
     right: 0;
 }
 
+/*El color de los parrafos va ser verde */
 p {
     color: green;
 }
 
+/*Parrafos que esten dentro de la etiqueta aside van a ser azules */
 aside p{
     color: blue;
 }
@@ -105,11 +107,13 @@ h1, h2, h3 {
     font-family: cursive;
 }
 
+/*Son caracteristicas unicas que se asignan del otro lado "id" y el nombre que se le asigno */
 #titulo {
     font-family: serif;
     color: tomato;
 }
 
+/*Son caracteristicas unicas que se asignan del otro lado "class" y el nombre que se le asigno */
 .producto {
     font-size: 16px;
     color: aqua;
