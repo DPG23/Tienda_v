@@ -21,6 +21,14 @@ public class ClienteController {
     public String inicio(Model model, String cliente) {
         var clientes = clienteService.getClientes();
         model.addAttribute("clientes", clientes);
+        model.addAttribute("totalClientes", clientes.size());
+        
+        var totalCredito=0;
+        for(var c:clientes){
+            totalCredito+=c.getCredito().getLimite();
+        }
+        
+        model.addAttribute("totalCredito", totalCredito);
         return "/cliente/listado";
     }
 
@@ -36,7 +44,7 @@ public class ClienteController {
         return "/cliente/modifica";
     }
 
-    @PostMapping("/guardarCliente")
+    @PostMapping("/guardar")
     public String guardaCliente(Cliente cliente) {
         clienteService.saveCliente(cliente);
         return "redirect:/cliente/listado";
@@ -46,7 +54,7 @@ public class ClienteController {
     @GetMapping("/modificar/{idCliente}")
     public String modificaCliente(Cliente cliente, Model model) {
         cliente = clienteService.getCliente(cliente);
-        model.addAttribute("cliente",cliente);
+        model.addAttribute("cliente", cliente);
         return "cliente/modifica";
 
     }
