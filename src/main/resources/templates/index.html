@@ -10,7 +10,7 @@
         <header th:replace="layout/plantilla :: header"/>
 
         <div class="container">
-            <h2>Nuestros Articulos</h2>
+            <h2>[[#{index.nuestrosArticulos}]]</h2>
             <div class="row row-cols-3">
                 <div class="card" th:each="articulo : ${articulos}">
                     <div class="card-body">
